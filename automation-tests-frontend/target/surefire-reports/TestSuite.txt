@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.910 s <<< FAILURE! -- in TestSuite
+com.cgm.frontend.runner.TestRunner.runScenario["Basic sanity test", "Sanity check"](1) -- Time elapsed: 0.270 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'user opens the application on "chrome"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("user opens the application on {string}")
+public void user_opens_the_application_on(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user opens the application on "chrome"(file:///Users/sangeetashetty/Desktop/Github_Projects/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/sanity.feature:5)
+
