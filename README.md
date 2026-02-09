@@ -13,6 +13,7 @@ A mock user management dashboard made using React and the [JsonPlaceholder API](
 - Responsive design using Bootstrap
 - Add user form with custom validation for fields
 - Elegant toasts for adding user and deleting user
+- Update Phone number for a user
 
 ## Screenshots
 
@@ -21,6 +22,9 @@ A mock user management dashboard made using React and the [JsonPlaceholder API](
 
 ### Add user
 <img src="https://raw.githubusercontent.com/3ddelano/mock-user-management/main/_media/add_user.png"></img>
+
+### Update Phone for a user 
+<img src"https://github.com/sangeethashettysv/mock-user-management-qatask/main/_media/update_phone_for_user.png"></img>
 
 
 ### Support development
