@@ -24,7 +24,7 @@ A mock user management dashboard made using React and the [JsonPlaceholder API](
 <img src="https://raw.githubusercontent.com/3ddelano/mock-user-management/main/_media/add_user.png"></img>
 
 ### Update Phone for a user 
-<img src="https://raw.githubusercontent.com/sangeethashettysv/mock-user-management-qatask/main/_media/update_phone_for_user.png"></img>
+<img src="https://github.com/sangeetashettysv/mock-user-management-qatask/blob/main/_media/update_phone_for_user.png"></img>
 
 
 ### Support development
