@@ -59,6 +59,6 @@ The project automates **Update User** functionalities.
 - mvn clean test
 
 5. **Run tests with particular tag**
-mvn clean test -Dcucumber.filter.tags="@req-UL-UPDATE-001"
+- mvn clean test -Dcucumber.filter.tags="@req-UL-UPDATE-001"
 
 
