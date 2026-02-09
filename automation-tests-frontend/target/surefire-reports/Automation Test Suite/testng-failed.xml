@@ -6,8 +6,8 @@
       <class name="com.cgm.frontend.runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="4 5"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.cgm.frontend.runner.TestRunner -->
     </classes>

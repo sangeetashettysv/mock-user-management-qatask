@@ -9,20 +9,58 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Automation Test Suite</th></tr>
-<tr><td><a href="#t0">Cucumber Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,798</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Cucumber Tests</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">66,452</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cgm.frontend.runner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1770493837236</td><td rowspan="1">261</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.cgm.frontend.runner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1770676602142</td><td rowspan="2">7700</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr><th colspan="4">Cucumber Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.cgm.frontend.runner.TestRunner</td><td><a href="#m2">runScenario</a></td><td rowspan="6">1770676609843</td><td rowspan="6">4583</td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr></tbody>
 </table>
-<h2>Cucumber Tests</h2><h3 id="m0">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Basic sanity test&quot;</td><td>&quot;Sanity check&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;user opens the application on &quot;chrome&quot;&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given(&quot;user opens the application on {string}&quot;)
-public void user_opens_the_application_on(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user opens the application on &quot;chrome&quot;(file:///Users/sangeetashetty/Desktop/Github_Projects/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/sanity.feature:5)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Cucumber Tests</h2><h3 id="m0">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;REQ-UL-UPDATE-003 - Intentional failure for debugging&quot;</td><td>&quot;Update User Phone&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (888,407) because another element &lt;div class=&quot;modal-footer&quot;&gt; obscures it
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8d3d4785-3c69-46e4-89f4-16f2197c62b3, clickElement {id=a4763a7e-c1ba-4cde-a403-6bd9b98b38ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 66139, moz:profile: /var/folders/sl/r3p5qdvx6hj..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (8d3d4785-3c69-46e4-89f4-16f2197c62b3)] -&gt; css selector: button[type=&apos;button&apos;][class=&apos;btn btn-primary&apos;]]
+Session ID: 8d3d4785-3c69-46e4-89f4-16f2197c62b3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+	at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+	at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;REQ-UL-UPDATE-003 - Intentional failure for debugging&quot;</td><td>&quot;Update User Phone&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-dismiss=&quot;modal&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (888, 407). Other element would receive the click: &lt;div class=&quot;modal-footer&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=144.0.7559.133)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1a9cb7f205b51895d4653167a725589, clickElement {id=f.68E1E4EAD23F99381F0BA241E56A825E.d.F54460BF1331B2966788BE4634D971F1.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/sl/r3p5qdvx6hj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64807}, goog:processID: 66088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64807/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d1a9cb7f205b51895d4653167a725589)] -&gt; css selector: button[type=&apos;button&apos;][class=&apos;btn btn-primary&apos;]]
+Session ID: d1a9cb7f205b51895d4653167a725589
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+	at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+	at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits&quot;</td><td>&quot;Update User Phone&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;REQ-UL-UPDATE-001 - Update phone modal is shown&quot;</td><td>&quot;Update User Phone&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;REQ-UL-UPDATE-002 - Successfully update phone&quot;</td><td>&quot;Update User Phone&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;REQ-UL-UPDATE-001 - Update phone modal is shown&quot;</td><td>&quot;Update User Phone&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits&quot;</td><td>&quot;Update User Phone&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.cgm.frontend.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;REQ-UL-UPDATE-002 - Successfully update phone&quot;</td><td>&quot;Update User Phone&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

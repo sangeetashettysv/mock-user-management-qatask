@@ -1,69 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-07T20:50:35 CET" name="Automation Test Suite" finished-at="2026-02-07T20:50:37 CET" duration-ms="1798">
+  <suite started-at="2026-02-09T23:35:55 CET" name="Automation Test Suite" finished-at="2026-02-09T23:37:02 CET" duration-ms="66452">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@5656be13]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-07T20:50:35 CET" name="Cucumber Tests" finished-at="2026-02-07T20:50:37 CET" duration-ms="1798">
+    <test started-at="2026-02-09T23:35:55 CET" name="Cucumber Tests" finished-at="2026-02-09T23:37:02 CET" duration-ms="66452">
       <class name="com.cgm.frontend.runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cgm.frontend.runner.TestRunner@5656be13]" started-at="2026-02-07T20:50:35 CET" name="setUpClass" finished-at="2026-02-07T20:50:37 CET" duration-ms="1398" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:35:55 CET" name="setUpClass" finished-at="2026-02-09T23:35:57 CET" duration-ms="1497" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@54e7391d]]>
+                <![CDATA[org.testng.TestRunner@4b195203]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@5656be13]" started-at="2026-02-07T20:50:37 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-07T20:50:37 CET" duration-ms="261" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:35:57 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T23:36:07 CET" duration-ms="9865" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Basic sanity test"]]>
+                <![CDATA["REQ-UL-UPDATE-001 - Update phone modal is shown"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sanity check"]]>
+                <![CDATA["Update User Phone"]]>
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'user opens the application on "chrome"' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given("user opens the application on {string}")
-public void user_opens_the_application_on(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user opens the application on "chrome"' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given("user opens the application on {string}")
-public void user_opens_the_application_on(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.user opens the application on "chrome"(file:///Users/sangeetashetty/Desktop/Github_Projects/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/sanity.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cgm.frontend.runner.TestRunner@5656be13]" started-at="2026-02-07T20:50:37 CET" name="tearDownClass" finished-at="2026-02-07T20:50:37 CET" duration-ms="62" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:36:07 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T23:36:18 CET" duration-ms="11787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["REQ-UL-UPDATE-001 - Update phone modal is shown"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update User Phone"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:36:18 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T23:36:26 CET" duration-ms="7883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["REQ-UL-UPDATE-002 - Successfully update phone"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update User Phone"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:36:26 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T23:36:36 CET" duration-ms="9583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["REQ-UL-UPDATE-002 - Successfully update phone"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update User Phone"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:36:36 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T23:36:42 CET" duration-ms="5758" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["REQ-UL-UPDATE-003 - Intentional failure for debugging"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update User Phone"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="button" class="btn btn-primary" data-bs-dismiss="modal" disabled="">...</button> is not clickable at point (888, 407). Other element would receive the click: <div class="modal-footer">...</div>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1a9cb7f205b51895d4653167a725589, clickElement {id=f.68E1E4EAD23F99381F0BA241E56A825E.d.F54460BF1331B2966788BE4634D971F1.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/sl/r3p5qdvx6hj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64807}, goog:processID: 66088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64807/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d1a9cb7f205b51895d4653167a725589)] -> css selector: button[type='button'][class='btn btn-primary']]
+Session ID: d1a9cb7f205b51895d4653167a725589]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="btn btn-primary" data-bs-dismiss="modal" disabled="">...</button> is not clickable at point (888, 407). Other element would receive the click: <div class="modal-footer">...</div>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1a9cb7f205b51895d4653167a725589, clickElement {id=f.68E1E4EAD23F99381F0BA241E56A825E.d.F54460BF1331B2966788BE4634D971F1.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/sl/r3p5qdvx6hj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64807}, goog:processID: 66088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64807/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d1a9cb7f205b51895d4653167a725589)] -> css selector: button[type='button'][class='btn btn-primary']]
+Session ID: d1a9cb7f205b51895d4653167a725589
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:36:42 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T23:36:49 CET" duration-ms="7700" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["REQ-UL-UPDATE-003 - Intentional failure for debugging"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update User Phone"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-primary" type="button"> is not clickable at point (888,407) because another element <div class="modal-footer"> obscures it
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '23.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8d3d4785-3c69-46e4-89f4-16f2197c62b3, clickElement {id=a4763a7e-c1ba-4cde-a403-6bd9b98b38ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 66139, moz:profile: /var/folders/sl/r3p5qdvx6hj..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (8d3d4785-3c69-46e4-89f4-16f2197c62b3)] -> css selector: button[type='button'][class='btn btn-primary']]
+Session ID: 8d3d4785-3c69-46e4-89f4-16f2197c62b3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-primary" type="button"> is not clickable at point (888,407) because another element <div class="modal-footer"> obscures it
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '23.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8d3d4785-3c69-46e4-89f4-16f2197c62b3, clickElement {id=a4763a7e-c1ba-4cde-a403-6bd9b98b38ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 66139, moz:profile: /var/folders/sl/r3p5qdvx6hj..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (8d3d4785-3c69-46e4-89f4-16f2197c62b3)] -> css selector: button[type='button'][class='btn btn-primary']]
+Session ID: 8d3d4785-3c69-46e4-89f4-16f2197c62b3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:36:49 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T23:36:54 CET" duration-ms="4583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update User Phone"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:36:54 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T23:37:02 CET" duration-ms="7678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update User Phone"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cgm.frontend.runner.TestRunner@3270d194]" started-at="2026-02-09T23:37:02 CET" name="tearDownClass" finished-at="2026-02-09T23:37:02 CET" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

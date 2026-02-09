@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,54 @@
                     <div class="method-list-content failed suite-Automation_Test_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Basic sanity test&quot;, &quot;Sanity check&quot;)">runScenario("Basic sanity test", "Sanity check")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;REQ-UL-UPDATE-003 - Intentional failure for debugging&quot;, &quot;Update User Phone&quot;)">runScenario("REQ-UL-UPDATE-003 - Intentional failure for debugging", "Update User Phone")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;REQ-UL-UPDATE-003 - Intentional failure for debugging&quot;, &quot;Update User Phone&quot;)">runScenario("REQ-UL-UPDATE-003 - Intentional failure for debugging", "Update User Phone")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Automation_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Test_Suite" class="hide-methods passed suite-Automation_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Automation_Test_Suite -->
+                      <a href="#" panel-name="suite-Automation_Test_Suite" class="show-methods passed suite-Automation_Test_Suite"> (show)</a> <!-- show-methods passed suite-Automation_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits&quot;, &quot;Update User Phone&quot;)">runScenario("REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits", "Update User Phone")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;REQ-UL-UPDATE-001 - Update phone modal is shown&quot;, &quot;Update User Phone&quot;)">runScenario("REQ-UL-UPDATE-001 - Update phone modal is shown", "Update User Phone")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;REQ-UL-UPDATE-002 - Successfully update phone&quot;, &quot;Update User Phone&quot;)">runScenario("REQ-UL-UPDATE-002 - Successfully update phone", "Update User Phone")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;REQ-UL-UPDATE-001 - Update phone modal is shown&quot;, &quot;Update User Phone&quot;)">runScenario("REQ-UL-UPDATE-001 - Update phone modal is shown", "Update User Phone")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits&quot;, &quot;Update User Phone&quot;)">runScenario("REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits", "Update User Phone")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.cgm.frontend.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;REQ-UL-UPDATE-002 - Successfully update phone&quot;, &quot;Update User Phone&quot;)">runScenario("REQ-UL-UPDATE-002 - Successfully update phone", "Update User Phone")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,21 +170,64 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Basic sanity test&quot;, &quot;Sanity check&quot;)">
-                  </a> <!-- runScenario("Basic sanity test", "Sanity check") -->
+                  <a name="runScenario(&quot;REQ-UL-UPDATE-003 - Intentional failure for debugging&quot;, &quot;Update User Phone&quot;)">
+                  </a> <!-- runScenario("REQ-UL-UPDATE-003 - Intentional failure for debugging", "Update User Phone") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Basic sanity test","Sanity check")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;user opens the application on &quot;chrome&quot;&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given(&quot;user opens the application on {string}&quot;)
-public void user_opens_the_application_on(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user opens the application on &quot;chrome&quot;(file:///Users/sangeetashetty/Desktop/Github_Projects/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/sanity.feature:5)
-
+                  <span class="parameters">("REQ-UL-UPDATE-003 - Intentional failure for debugging","Update User Phone")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (888,407) because another element &lt;div class=&quot;modal-footer&quot;&gt; obscures it
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8d3d4785-3c69-46e4-89f4-16f2197c62b3, clickElement {id=a4763a7e-c1ba-4cde-a403-6bd9b98b38ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 66139, moz:profile: /var/folders/sl/r3p5qdvx6hj..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (8d3d4785-3c69-46e4-89f4-16f2197c62b3)] -&gt; css selector: button[type=&apos;button&apos;][class=&apos;btn btn-primary&apos;]]
+Session ID: 8d3d4785-3c69-46e4-89f4-16f2197c62b3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+	at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+	at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;REQ-UL-UPDATE-003 - Intentional failure for debugging&quot;, &quot;Update User Phone&quot;)">
+                  </a> <!-- runScenario("REQ-UL-UPDATE-003 - Intentional failure for debugging", "Update User Phone") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("REQ-UL-UPDATE-003 - Intentional failure for debugging","Update User Phone")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-dismiss=&quot;modal&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (888, 407). Other element would receive the click: &lt;div class=&quot;modal-footer&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=144.0.7559.133)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1a9cb7f205b51895d4653167a725589, clickElement {id=f.68E1E4EAD23F99381F0BA241E56A825E.d.F54460BF1331B2966788BE4634D971F1.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/sl/r3p5qdvx6hj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64807}, goog:processID: 66088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64807/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d1a9cb7f205b51895d4653167a725589)] -&gt; css selector: button[type=&apos;button&apos;][class=&apos;btn btn-primary&apos;]]
+Session ID: d1a9cb7f205b51895d4653167a725589
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+	at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+	at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+... Removed 3 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -148,10 +235,78 @@ public void user_opens_the_application_on(String string) {
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Automation_Test_Suite-class-failed -->
+          <div class="suite-Automation_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cgm.frontend.runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits&quot;, &quot;Update User Phone&quot;)">
+                  </a> <!-- runScenario("REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits", "Update User Phone") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits","Update User Phone")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;REQ-UL-UPDATE-001 - Update phone modal is shown&quot;, &quot;Update User Phone&quot;)">
+                  </a> <!-- runScenario("REQ-UL-UPDATE-001 - Update phone modal is shown", "Update User Phone") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("REQ-UL-UPDATE-001 - Update phone modal is shown","Update User Phone")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;REQ-UL-UPDATE-002 - Successfully update phone&quot;, &quot;Update User Phone&quot;)">
+                  </a> <!-- runScenario("REQ-UL-UPDATE-002 - Successfully update phone", "Update User Phone") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("REQ-UL-UPDATE-002 - Successfully update phone","Update User Phone")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;REQ-UL-UPDATE-001 - Update phone modal is shown&quot;, &quot;Update User Phone&quot;)">
+                  </a> <!-- runScenario("REQ-UL-UPDATE-001 - Update phone modal is shown", "Update User Phone") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("REQ-UL-UPDATE-001 - Update phone modal is shown","Update User Phone")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits&quot;, &quot;Update User Phone&quot;)">
+                  </a> <!-- runScenario("REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits", "Update User Phone") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits","Update User Phone")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;REQ-UL-UPDATE-002 - Successfully update phone&quot;, &quot;Update User Phone&quot;)">
+                  </a> <!-- runScenario("REQ-UL-UPDATE-002 - Successfully update phone", "Update User Phone") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("REQ-UL-UPDATE-002 - Successfully update phone","Update User Phone")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Test_Suite-class-passed -->
         </div> <!-- panel Automation_Test_Suite -->
         <div panel-name="test-xml-Automation_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/sangeetashetty/Desktop/Github_Projects/mock-user-management-qatask/automation-tests-frontend/testng.xml</span>
+            <span class="header-content">/Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -208,16 +363,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.cgm.frontend.runner.TestRunner')
-data.setCell(0, 3, 261);
+data.setCell(0, 3, 11787);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.cgm.frontend.runner.TestRunner')
+data.setCell(1, 3, 9865);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.cgm.frontend.runner.TestRunner')
+data.setCell(2, 3, 9583);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.cgm.frontend.runner.TestRunner')
+data.setCell(3, 3, 7883);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.cgm.frontend.runner.TestRunner')
+data.setCell(4, 3, 7700);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.cgm.frontend.runner.TestRunner')
+data.setCell(5, 3, 7678);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.cgm.frontend.runner.TestRunner')
+data.setCell(6, 3, 5758);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.cgm.frontend.runner.TestRunner')
+data.setCell(7, 3, 4583);
 window.suiteTableData['Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 261 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Automation_Test_Suite">
               </div> <!-- times-div-Automation_Test_Suite -->
             </div> <!-- times-div -->
@@ -245,18 +428,48 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.cgm.frontend.runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@54e7391d)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4b195203)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">runScenario("REQ-UL-UPDATE-001 - Update phone modal is shown", "Update User Phone")</span>
+                <span class="method-start">1520 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("REQ-UL-UPDATE-001 - Update phone modal is shown", "Update User Phone")</span>
+                <span class="method-start">11394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("REQ-UL-UPDATE-002 - Successfully update phone", "Update User Phone")</span>
+                <span class="method-start">23183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("REQ-UL-UPDATE-002 - Successfully update phone", "Update User Phone")</span>
+                <span class="method-start">31067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Basic sanity test", "Sanity check")</span>
-                <span class="method-start">1416 ms</span>
+                <span class="method-name">runScenario("REQ-UL-UPDATE-003 - Intentional failure for debugging", "Update User Phone")</span>
+                <span class="method-start">40651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("REQ-UL-UPDATE-003 - Intentional failure for debugging", "Update User Phone")</span>
+                <span class="method-start">46419 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits", "Update User Phone")</span>
+                <span class="method-start">54120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits", "Update User Phone")</span>
+                <span class="method-start">58704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">1694 ms</span>
+                <span class="method-start">66386 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

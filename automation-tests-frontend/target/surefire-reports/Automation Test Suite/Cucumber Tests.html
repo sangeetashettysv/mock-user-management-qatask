@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Cucumber Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 07 20:50:35 CET 2026</td>
+<td>Started on:</td><td>Mon Feb 09 23:35:55 CET 2026</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1798 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66452 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,31 +76,144 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basic sanity test", "Sanity check"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user opens the application on &quot;chrome&quot;&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given(&quot;user opens the application on {string}&quot;)
-public void user_opens_the_application_on(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user opens the application on &quot;chrome&quot;(file:///Users/sangeetashetty/Desktop/Github_Projects/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/sanity.feature:5)
-</pre></div><a href='#' onClick='toggleBox("stack-trace792488644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace792488644'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user opens the application on &quot;chrome&quot;&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given(&quot;user opens the application on {string}&quot;)
-public void user_opens_the_application_on(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user opens the application on &quot;chrome&quot;(file:///Users/sangeetashetty/Desktop/Github_Projects/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/sanity.feature:5)
+<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "REQ-UL-UPDATE-003 - Intentional failure for debugging", "Update User Phone"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (888,407) because another element &lt;div class=&quot;modal-footer&quot;&gt; obscures it
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8d3d4785-3c69-46e4-89f4-16f2197c62b3, clickElement {id=a4763a7e-c1ba-4cde-a403-6bd9b98b38ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 66139, moz:profile: /var/folders/sl/r3p5qdvx6hj..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (8d3d4785-3c69-46e4-89f4-16f2197c62b3)] -&gt; css selector: button[type=&apos;button&apos;][class=&apos;btn btn-primary&apos;]]
+Session ID: 8d3d4785-3c69-46e4-89f4-16f2197c62b3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+	at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+	at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116606935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace116606935'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (888,407) because another element &lt;div class=&quot;modal-footer&quot;&gt; obscures it
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8d3d4785-3c69-46e4-89f4-16f2197c62b3, clickElement {id=a4763a7e-c1ba-4cde-a403-6bd9b98b38ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 66139, moz:profile: /var/folders/sl/r3p5qdvx6hj..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (8d3d4785-3c69-46e4-89f4-16f2197c62b3)] -&gt; css selector: button[type=&apos;button&apos;][class=&apos;btn btn-primary&apos;]]
+Session ID: 8d3d4785-3c69-46e4-89f4-16f2197c62b3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+	at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+	at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
 </pre></div></td>
-<td>0</td>
-<td>com.cgm.frontend.runner.TestRunner@5656be13</td></tr>
+<td>7</td>
+<td>com.cgm.frontend.runner.TestRunner@3270d194</td></tr>
+<tr>
+<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "REQ-UL-UPDATE-003 - Intentional failure for debugging", "Update User Phone"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-dismiss=&quot;modal&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (888, 407). Other element would receive the click: &lt;div class=&quot;modal-footer&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=144.0.7559.133)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1a9cb7f205b51895d4653167a725589, clickElement {id=f.68E1E4EAD23F99381F0BA241E56A825E.d.F54460BF1331B2966788BE4634D971F1.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/sl/r3p5qdvx6hj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64807}, goog:processID: 66088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64807/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d1a9cb7f205b51895d4653167a725589)] -&gt; css selector: button[type=&apos;button&apos;][class=&apos;btn btn-primary&apos;]]
+Session ID: d1a9cb7f205b51895d4653167a725589
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+	at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+	at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638796611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638796611'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-dismiss=&quot;modal&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (888, 407). Other element would receive the click: &lt;div class=&quot;modal-footer&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=144.0.7559.133)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1a9cb7f205b51895d4653167a725589, clickElement {id=f.68E1E4EAD23F99381F0BA241E56A825E.d.F54460BF1331B2966788BE4634D971F1.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/sl/r3p5qdvx6hj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64807}, goog:processID: 66088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64807/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d1a9cb7f205b51895d4653167a725589)] -&gt; css selector: button[type=&apos;button&apos;][class=&apos;btn btn-primary&apos;]]
+Session ID: d1a9cb7f205b51895d4653167a725589
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.cgm.frontend.pages.UpdatePage.clickUpdatePhone(UpdatePage.java:63)
+	at com.cgm.frontend.stepDefinitions.UpdateUserSteps.user_enters_invalid_phone_data(UpdateUserSteps.java:93)
+	at ✽.user enters invalid phone data(file:///Users/sangeetashetty/Desktop/Github_Projects/Feb_Eight/mock-user-management-qatask/automation-tests-frontend/src/test/resources/features/update_user.feature:37)
+</pre></div></td>
+<td>5</td>
+<td>com.cgm.frontend.runner.TestRunner@3270d194</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits", "Update User Phone"</td>
+<td></td>
+<td>4</td>
+<td>com.cgm.frontend.runner.TestRunner@3270d194</td></tr>
+<tr>
+<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "REQ-UL-UPDATE-001 - Update phone modal is shown", "Update User Phone"</td>
+<td></td>
+<td>11</td>
+<td>com.cgm.frontend.runner.TestRunner@3270d194</td></tr>
+<tr>
+<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "REQ-UL-UPDATE-002 - Successfully update phone", "Update User Phone"</td>
+<td></td>
+<td>7</td>
+<td>com.cgm.frontend.runner.TestRunner@3270d194</td></tr>
+<tr>
+<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "REQ-UL-UPDATE-001 - Update phone modal is shown", "Update User Phone"</td>
+<td></td>
+<td>9</td>
+<td>com.cgm.frontend.runner.TestRunner@3270d194</td></tr>
+<tr>
+<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits", "Update User Phone"</td>
+<td></td>
+<td>7</td>
+<td>com.cgm.frontend.runner.TestRunner@3270d194</td></tr>
+<tr>
+<td title='com.cgm.frontend.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.cgm.frontend.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "REQ-UL-UPDATE-002 - Successfully update phone", "Update User Phone"</td>
+<td></td>
+<td>9</td>
+<td>com.cgm.frontend.runner.TestRunner@3270d194</td></tr>
 </table><p>
 </body>
 </html>
