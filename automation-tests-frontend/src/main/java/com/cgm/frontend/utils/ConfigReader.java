@@ -20,7 +20,6 @@ public class ConfigReader {
         }
     }
 
-    // Get the current environment (default to QA)
     public static String getEnvironment() {
         return properties.getProperty("env", "qa").toLowerCase();
     }
@@ -28,7 +27,7 @@ public class ConfigReader {
     // Get URL for current environment
     public static String getEnvironmentUrl() {
         String env = getEnvironment();
-        String urlKey = env + ".url"; // matches qa.url, staging.url, prod.url
+        String urlKey = env + ".url";
         String url = properties.getProperty(urlKey);
         if (url == null || url.isEmpty()) {
             throw new RuntimeException("Base URL not specified for environment: " + env);
@@ -39,12 +38,11 @@ public class ConfigReader {
 
     // Get browser (default to Chrome)
     public static String getBrowser() {
-    // First check if a system property is set (for CI/CD or command line override)
-    String browser = System.getProperty("browser");
-    if (browser != null && !browser.isEmpty()) {
-        return browser.toLowerCase().trim();
+        String browser = System.getProperty("browser");
+        if (browser != null && !browser.isEmpty()) {
+            return browser.toLowerCase().trim();
     }
-    // fallback to value from config.properties
+
     return properties.getProperty("browser", "chrome").toLowerCase().trim();
     }
 }

@@ -43,7 +43,8 @@ The project automates **Update User** functionalities.
 
 - After running npm run dev, the terminal will show a local URL, e.g., http://localhost:5173/.
 
-- Copy this URL and update config.properties:
+- Copy this URL and update config.properties located here:
+automation-tests-frontend/src/main/resources:
 
 - qa.url=http://localhost:5173/
 - staging.url=http://localhost:5173/
@@ -61,4 +62,6 @@ The project automates **Update User** functionalities.
 5. **Run tests with particular tag**
 - mvn clean test -Dcucumber.filter.tags="@req-UL-UPDATE-001"
 
+**Test Reports**
 
+- After execution, open the HTML report: target/cucumber-reports.html in your browser to view the test results.

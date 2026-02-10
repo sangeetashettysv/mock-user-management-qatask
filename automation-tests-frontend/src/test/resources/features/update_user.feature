@@ -5,7 +5,7 @@ Feature: Update User Phone
     I want to update the phone number of a user
     So that user contact information remains accurate
 
-  @sanity @regression @req-UL-UPDATE-001
+  @updateUser, @positive, @req-UL-UPDATE-001
   Scenario Outline: REQ-UL-UPDATE-001 - Update phone modal is shown
     Given user opens the application on "<browser>"
     When user clicks the Update action for a specific user
@@ -17,7 +17,7 @@ Feature: Update User Phone
       | chrome  |
       | firefox |
 
-  @regression @positive @req-UL-UPDATE-002
+  @updateUser, @positive, @req-UL-UPDATE-002  
   Scenario Outline: REQ-UL-UPDATE-002 - Successfully update phone
     Given user opens the application on "<browser>"
     When user clicks the Update action for a specific user
@@ -30,25 +30,25 @@ Feature: Update User Phone
       | chrome  |
       | firefox |
 
-  @debug @negative @req-UL-UPDATE-003
-  Scenario Outline: REQ-UL-UPDATE-003 - Intentional failure for debugging
-    Given user opens the application on "<browser>"
-    When user clicks the Update action for a specific user
-    And user enters invalid phone data
-    Then modal should close
-
-    Examples:
-      | browser |
-      | chrome  |
-      | firefox |
-
-@regression @negative @req-UL-UPDATE-004
+  @updateUser, @negative, @req-UL-UPDATE-003
   Scenario Outline: REQ-UL-UPDATE-004 - Validation error for phone less than 10 digits
     Given user opens the application on "<browser>"
     When user clicks the Update action for a specific user
     And user enters phone number with less than 10 digits
     Then error message below Phone field should be displayed
     And Update Phone button should be disabled
+
+    Examples:
+      | browser |
+      | chrome  |
+      | firefox |
+
+  @updateUser, @debug, @req-UL-UPDATE-004
+  Scenario Outline: REQ-UL-UPDATE-003 - Intentional failure for debugging
+    Given user opens the application on "<browser>"
+    When user clicks the Update action for a specific user
+    And user enters invalid phone data
+    Then modal should close
 
     Examples:
       | browser |

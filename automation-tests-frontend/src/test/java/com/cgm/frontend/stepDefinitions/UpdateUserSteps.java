@@ -25,8 +25,6 @@ public class UpdateUserSteps {
         this.context = context;
     }
 
-    // -------- Common modal interactions --------
-
     @When("user clicks the Update action for a specific user")
     public void user_clicks_the_update_action_for_a_specific_user() {
         WebDriver driver = context.getDriver();
@@ -110,13 +108,13 @@ public class UpdateUserSteps {
         String expectedMessage = "Phone must be a 10-digit number (eg. 9812345678)";
         String actualMessage = updatePage.getPhoneValidationErrorText();
         assertEquals(actualMessage, expectedMessage,
-                "Validation message is incorrect for short phone number");
+                "Validation message does not match");
 }
 
     @Then("Update Phone button should be disabled")
     public void update_phone_button_should_be_disabled() {
         assertFalse(updatePage.isUpdatePhoneButtonEnabled(),
-                "Update Phone button is enabled despite validation error");
+                "Update Phone button is enabled.");
     }
 
 }
